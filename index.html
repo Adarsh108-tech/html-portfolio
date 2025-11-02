@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adarsh Tiwari — Portfolio</title>
+  <meta name="description" content="Portfolio of Adarsh Tiwari — Web Developer | Vice Lead at DevSource | B.Tech IT" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#f8fafc;
+      --card:#ffffff;
+      --muted:#475569;
+      --accent:#2563eb; /* blue accent */
+      --glass: rgba(0,0,0,0.03);
+      color-scheme: light;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(180deg,var(--bg), #e2e8f0 120%);
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      padding:32px;
+    }
+
+    .container{max-width:1000px;margin:0 auto;}
+
+    header{
+      display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px;
+    }
+    .brand{display:flex;align-items:center;gap:14px}
+    .avatar{
+      width:78px;height:78px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;color:white;box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    }
+    h1{margin:0;font-size:28px;letter-spacing:0.5px}
+    .contact{font-size:13px;color:var(--muted)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    nav a:hover{color:var(--accent)}
+
+    main{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:18px}
+
+    /* left column */
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 24px rgba(0,0,0,0.08);}
+    .section-title{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+    .section-title h2{margin:0;font-size:15px;color:var(--accent);letter-spacing:0.6px}
+    .muted{color:var(--muted);font-size:13px}
+
+    .list{margin:0;padding:0;list-style:none}
+    .item{padding:12px 0;border-top:1px solid rgba(0,0,0,0.05)}
+    .item:first-child{border-top:0}
+    .role{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+    .role h3{margin:0;font-size:15px}
+    .role .period{font-size:13px;color:var(--muted)}
+    .desc{margin-top:8px;color:#1e293b;font-size:14px}
+    .small-link{color:var(--accent);text-decoration:none;font-weight:600}
+
+    /* right column */
+    aside .card{position:sticky;top:32px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--glass);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted); cursor: pointer; }
+    .chip:hover{
+        background: yellow;
+        color: black;
+        transition: 500ms;
+    }
+    footer{text-align:center;margin-top:28px;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:900px){
+      main{grid-template-columns:1fr;}
+      aside .card{position:static}
+      header{flex-direction:column;align-items:flex-start;gap:8px}
+    }
+
+    a.inline{color:var(--accent);text-decoration:none}
+    a.inline:hover{text-decoration:underline}
+
+    main{
+        padding-bottom: 2.5rem;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">AT</div>
+        <div>
+          <h1>Adarsh Tiwari</h1>
+          <div class="contact">B.Tech (IT) • Delhi, India</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="card">
+          <div class="section-title"><h2>Experience</h2></div>
+          <ul class="list">
+
+            <li class="item">
+              <div class="role">
+                <h3>Freelance Web Developer — The Good Illustrator</h3>
+                <div class="period">2025</div>
+              </div>
+              <div class="desc">Designed and developed a portfolio website for a professional illustrator. <a class="inline" href="https://the-good-illustrator.vercel.app/" target="_blank">the-good-illustrator.vercel.app</a></div>
+            </li>
+
+            <li class="item">
+              <div class="role">
+                <h3>Coding Samurai — Intern</h3>
+                <div class="period">Jul — Aug 2025</div>
+              </div>
+              <div class="desc">Worked on team projects and daily scrums. <a class="inline" href="https://github.com/Adarsh108-tech/coding-samurai-internship" target="_blank">GitHub Repo</a></div>
+            </li>
+
+            <li class="item">
+              <div class="role">
+                <h3>Web Developer (Part-time) — The Voice of Glacier NGO</h3>
+                <div class="period">Jan 2025 — Present</div>
+              </div>
+              <div class="desc">Built and maintained NGO landing page and ongoing updates. <a class="inline" href="https://thevoiceofglaciers.org/" target="_blank">thevoiceofglaciers.org</a></div>
+            </li>
+          </ul>
+        </div>
+
+        <div style="height:18px"></div>
+
+        <div class="card" id="projects">
+          <div class="section-title"><h2>Projects</h2></div>
+          <ul class="list">
+            <li class="item">
+              <h3>DevSource Website — MERN Stack</h3>
+              <div class="desc">Full-stack site with auth, blogging, admin panel and student resources. <a class="inline" href="https://dev-source-final-frontend-e5e7.vercel.app/" target="_blank">Live</a> • <a class="inline" href="https://dev-source-members.vercel.app/" target="_blank">Members</a> • <a class="inline" href="https://www.linkedin.com/feed/update/urn:li:activity:7347665824045854721/" target="_blank">LinkedIn</a></div>
+            </li>
+
+            <li class="item">
+              <h3>AI Chatbot (Welp) — MERN, AI/ML</h3>
+              <div class="desc">Productivity chatbot for team workflows. <a class="inline" href="https://www.linkedin.com/feed/update/urn:li:activity:7351926572062265345/" target="_blank">LinkedIn Showcase</a></div>
+            </li>
+
+            <li class="item">
+              <h3>Real-Time Chat App — Node.js, WebSockets, React</h3>
+              <div class="desc">Secure, room-based chat with personalization. <a class="inline" href="https://www.linkedin.com/feed/update/urn:li:activity:7351926572062265345/" target="_blank">Demo</a></div>
+            </li>
+
+            <li class="item">
+              <h3>Self-Balancing Bot — Arduino, PID</h3>
+              <div class="desc">Physical robot implementing PID control and IMU tuning for stable balance.</div>
+            </li>
+          </ul>
+        </div>
+
+        <div style="height:18px"></div>
+
+        <div class="card" id="education">
+          <div class="section-title"><h2>Education</h2></div>
+          <ul class="list">
+            <li class="item">
+              <h3>University School of Information, Communication &amp; Technology (USICT), GGSIPU</h3>
+              <div class="period muted">B.Tech in Information Technology — CGPA: 8.5/10 (2023 — 2027)</div>
+            </li>
+            <li class="item">
+              <h3>S.D. Vidya Mandir — Panipat, Haryana</h3>
+              <div class="period muted">91.4% — School Captain (2022)</div>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+
+      <aside>
+        <div class="card">
+          <div class="section-title" id="contact"><h2>Contact & Links</h2></div>
+          <p class="muted">+91-9817368861<br>
+          <a class="small-link" href="mailto:adarsh16221@google.com">adarsh16221@google.com</a></p>
+
+          <div style="height:12px"></div>
+          <div class="section-title"><h2>Technical Skills</h2></div>
+          <div class="skills" aria-hidden>
+            <span class="chip">C++</span>
+            <span class="chip">Python</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">React.js</span>
+            <span class="chip">Next.js</span>
+            <span class="chip">TailwindCSS</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">Express</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Docker</span>
+            <span class="chip">AWS</span>
+          </div>
+
+          <div style="height:12px"></div>
+          <div class="section-title"><h2>Volunteering</h2></div>
+          <ul class="list">
+            <li class="item">Designed and conducted an all-India development bootcamp named <strong>DevCamp</strong></li>
+            <li class="item">Chair of <strong>GGSIPU USIC&amp;T ACM Student Chapter</strong></li>
+            <li class="item">Vice Lead of the development community <strong>DevSource</strong></li>
+          </ul>
+
+          <div style="height:12px"></div>
+          <div class="section-title"><h2>Extras</h2></div>
+          <p class="muted">Portfolio: <a class="small-link" href="https://portfolio-nine-eosin-75.vercel.app/">portfolio</a><br>
+          GitHub: <a class="small-link" href="https://github.com/Adarsh108-tech">github.com/Adarsh108-tech</a><br>
+          LinkedIn: <a class="small-link" href="https://www.linkedin.com/in/adarsh-tiwari-5084ab256/">linkedin.com/in/adarsh-tiwari</a></p>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+</body>
+</html>
